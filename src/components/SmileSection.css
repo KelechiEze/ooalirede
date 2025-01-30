@@ -120,3 +120,120 @@
         margin-top: 20px;
     }
 }
+
+
+@media (max-width: 375px) {
+    /* Main Container */
+    .smile-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 10%;
+        margin-top: 70px;
+    }
+
+    /* Left Text Container */
+    .smile-text {
+        width: 90%;
+        padding-right: 0;
+    }
+
+    .smile-subtitle {
+        font-size: 0.9rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #666;
+        margin-bottom: 10px;
+    }
+
+    .smile-title {
+        font-size: 1.6rem;
+        font-weight: bold;
+        color: #222;
+        margin-bottom: 10px;
+        line-height: 1.5;
+    }
+
+    /* Green Underline */
+    .underline {
+        width: 150px;
+        height: 8px;
+        background-color: #097d32;
+        margin-bottom: 20px;
+        margin-left: 320px;
+    }
+
+    .smile-description {
+        font-size: 1rem;
+        color: #444;
+        line-height: 1.9;
+        margin-bottom: 20px;
+        margin-right: 20px;
+        padding: 0 70px;
+
+    }
+
+    /* Button Container */
+    .smile-buttons {
+        display: flex;
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 15px;
+        justify-content: center;
+        margin-top: 15px;
+        width: 100%;
+    }
+
+    /* Advocate Button */
+    .btn-advocate1 {
+        background-color: #ff6200;
+        color: white;
+        border: none;
+        padding: 12px 20px;
+        font-size: 1rem;
+        font-weight: 400;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s ease, transform 0.2s ease;
+        width: 30%; /* Make buttons full width when stacked */
+        min-width: 120px;
+        margin-left: 300px;
+    }
+
+    .btn-advocate1:hover {
+        background-color: #e64a19;
+        transform: translateY(-2px);
+    }
+
+    /* Register Button */
+    .btn-register1 {
+        background-color: #097d32;
+        color: white;
+        border: none;
+        padding: 12px 20px;
+        font-size: 1rem;
+        font-weight: 400;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s ease, transform 0.2s ease;
+        width: 30%; /* Make buttons full width when stacked */
+        margin-left: 300px;
+        min-width: 120px;
+    }
+
+    .btn-register1:hover {
+        background-color: #066627;
+        transform: translateY(-2px);
+    }
+
+    /* Right Image */
+    /* Right Image */
+    .smile-image {
+        width: 60%; /* Reduce the width of the image */
+        margin-top: 20px;
+    }
+
+    .smile-image img {
+        width: 80%; /* Ensure the image scales with the container */
+        height: auto;
+        border-radius: 12px;
+    }
+}

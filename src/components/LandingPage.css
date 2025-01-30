@@ -165,3 +165,102 @@ body {
       transform: scale(1);
   }
 }
+
+@media (max-width: 375px) {
+  .landing-section {
+    flex-direction: column;
+    padding: 15px;
+    text-align: center;
+  }
+
+  .text-container {
+    width: 100%;
+    margin-top: 0;
+    padding: 0 10px;
+  }
+
+  .text-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+
+  .text-container p {
+    font-size: 0.9rem;
+    padding: 0;
+    line-height: 1.5;
+  }
+
+  .btn-group {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .advocate-btn,
+  .register-btn {
+    width: 25%;
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  .image-container {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .image-container img {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 425px) {
+  .landing-section {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .text-container {
+    width: 100%;
+    margin-top: 0;
+    padding: 0 15px;
+  }
+
+  .text-container h2 {
+    font-size: 2.2rem; /* Reduced for better fit */
+    margin-bottom: 10px;
+  }
+
+  .text-container p {
+    font-size: 0.95rem;
+    padding: 0;
+    line-height: 1.6;
+  }
+
+  .btn-group {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .advocate-btn,
+  .register-btn {
+    width: 80%; /* Increased for easier mobile clicking */
+    font-size: 1rem;
+    padding: 12px;
+  }
+
+  .image-container {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .image-container img {
+    max-width: 95%;
+    border-radius: 8px;
+  }
+}

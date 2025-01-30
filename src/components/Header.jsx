@@ -1,6 +1,6 @@
 import React from "react";
 import "./Header.css";
-import logo from "../assets/iredelogo.png"; // Replace with actual logo file
+import logo from "../assets/iredelogo.png"; 
 
 const Header = () => {
   return (
@@ -9,9 +9,9 @@ const Header = () => {
         <img src={logo} alt="The IREDE Foundation" />
       </div>
       <nav className="nav-links">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Sponsors</a>
+        <a href="/">Home</a>
+        <a href="">About</a>
+        <a href="">Sponsors</a>
         <button className="donate-btn1">
           <div className="text-wrapper">
             <span className="text">Donate Now</span>

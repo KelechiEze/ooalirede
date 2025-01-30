@@ -148,3 +148,98 @@
         justify-content: center;
     }
 }
+
+@media (max-width: 375px) {
+    .footer {
+        padding: 50px 10%; /* Add padding to maintain spacing */
+    }
+
+    .footer-container {
+        flex-direction: column; /* Stack items for better spacing */
+        align-items: center;
+        text-align: center; /* Center text alignment */
+    }
+
+    /* Donations Section */
+    .footer-donation {
+        max-width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .footer-donation h3 {
+        font-size: 1.3rem; /* Maintain readability */
+    }
+
+    .donate-btn {
+        font-size: 1rem;
+        padding: 12px 20px; /* Keep button proportionate */
+        border-radius: 25px;
+        margin-left: 20px;
+    }
+
+    .heart-icon {
+        font-size: 1rem;
+        padding: 6px;
+        margin-right: 8px;
+    }
+
+    /* Footer Links */
+    .footer-links {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .footer-links h4 {
+        font-size: 1.2rem;
+        margin-bottom: 12px;
+    }
+
+    .footer-links ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px; /* Add spacing between links */
+    }
+
+    .footer-links ul li {
+        font-size: 1rem;
+    }
+
+    .footer-logo {
+        width: 90px;
+        margin-top: 15px;
+        margin-left: 60px;
+    }
+
+    /* Contact Section */
+    .footer-contact {
+        max-width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .footer-contact h4 {
+        font-size: 1.2rem;
+        margin-bottom: 12px;
+    }
+
+    .footer-contact ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-contact ul li {
+        font-size: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 10px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        width: 100%;
+    }
+
+    .contact-icon {
+        font-size: 1.2rem;
+    }
+}

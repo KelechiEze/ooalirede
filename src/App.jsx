@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "./components/Header";
 import LandingPage from "./components/LandingPage";
+import Carousel from "./components/Carousel";
 import NextSection from "./components/NextSection";
 import SmileSection from "./components/SmileSection";
 import Sponsors from "./components/Sponsors";
@@ -13,6 +14,7 @@ function App() {
     <>
       <Header />
       <LandingPage />
+      <Carousel />
       <NextSection />
       <SmileSection />
       <Sponsors />
