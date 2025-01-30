@@ -12,7 +12,12 @@ const Header = () => {
         <a href="#">Home</a>
         <a href="#">About</a>
         <a href="#">Sponsors</a>
-        <button className="donate-btn1">Donate Now</button>
+        <button className="donate-btn1">
+          <div className="text-wrapper">
+            <span className="text">Donate Now</span>
+            <span className="text">Donate Now</span>
+          </div>
+        </button>
       </nav>
     </header>
   );

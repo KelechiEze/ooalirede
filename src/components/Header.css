@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 20px 50px; 
+  padding: 20px 2px; 
   margin-top: 10px;
   background-color: white;
   position: relative;
@@ -33,7 +33,8 @@
 .nav-links a {
   text-decoration: none;
   color: black;
-  font-weight: 500;
+  font-weight: 300;
+  margin-top: 10px;
   transition: color 0.3s ease, transform 0.3s ease;
   position: relative;
 }
@@ -69,20 +70,46 @@
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
-  font-weight: bold;
+  font-weight: 300;
   cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  height: 45px; /* Fixed height */
+  width: 130px; /* Adjust width */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-  opacity: 0;
-  transform: scale(0.8);
-  animation: fadeInScale 1.2s ease-out 1s forwards; /* Delayed fade-in */
 }
 
-/* Button Hover Effect */
-.donate-btn1:hover {
-  background-color: #005a00;
-  transform: scale(1.1); /* Slight scale-up */
-  box-shadow: 0px 4px 10px rgba(0, 127, 0, 0.3); /* Glow effect */
+/* Text Wrapper */
+.text-wrapper {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 200%; /* Makes room for the sliding effect */
+  top: 0;
+  transition: transform 0.2s ease-in-out;
 }
+
+/* Individual text spans */
+.donate-btn1 .text {
+  height: 50%; /* Half the wrapper height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+}
+
+/* Hover Effect: Move text wrapper up */
+.donate-btn1:hover .text-wrapper {
+  transform: translateY(-50%);
+}
+
 
 /* Keyframes for Header Slide-in */
 @keyframes slideIn {

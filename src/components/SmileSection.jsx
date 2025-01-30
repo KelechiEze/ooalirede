@@ -20,8 +20,8 @@ const SmileSection = () => {
 
         {/* Buttons */}
         <div className="smile-buttons">
-          <button className="btn-advocate">Become an Advocate</button>
-          <button className="btn-register">Register for the Walk</button>
+          <button className="btn-advocate1">Become an Advocate</button>
+          <button className="btn-register1">Register for the Walk</button>
         </div>
       </div>
 

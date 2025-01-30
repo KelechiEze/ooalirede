@@ -56,11 +56,11 @@
 }
 
 /* Button Styles */
-.btn-advocate,
-.btn-register {
+.btn-advocate2,
+.btn-register2 {
     padding: 12px 24px;
     font-size: 1rem;
-    font-weight: bold;
+    font-weight: 400;
     border-radius: 6px;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
@@ -68,22 +68,22 @@
     border: none;
 }
 
-.btn-advocate {
+.btn-advocate2 {
     background-color: #ff6200;
     color: #fff;
 }
 
-.btn-advocate:hover {
+.btn-advocate2:hover {
     background-color: #e64a19;
     transform: translateY(-2px);
 }
 
-.btn-register {
+.btn-register2 {
     background-color: #097d32;
     color: #fff;
 }
 
-.btn-register:hover {
+.btn-register2:hover {
     background-color: #066627;
     transform: translateY(-2px);
 }

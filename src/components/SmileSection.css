@@ -53,37 +53,37 @@
 }
 
 /* Advocate Button */
-.btn-advocate {
+.btn-advocate1 {
     background-color: #ff6200;
     color: #fff;
     border: none;
     padding: 12px 20px;
     font-size: 1rem;
-    font-weight: bold;
+    font-weight: 400;
     border-radius: 5px;
     cursor: pointer;
     transition: background 0.3s ease, transform 0.2s ease;
 }
 
-.btn-advocate:hover {
+.btn-advocate1:hover {
     background-color: #e64a19;
     transform: translateY(-2px);
 }
 
 /* Register Button */
-.btn-register {
+.btn-register1 {
     background-color: #097d32;
     color: #fff;
     border: none;
     padding: 12px 20px;
     font-size: 1rem;
-    font-weight: bold;
+    font-weight: 400;
     border-radius: 5px;
     cursor: pointer;
     transition: background 0.3s ease, transform 0.2s ease;
 }
 
-.btn-register:hover {
+.btn-register1:hover {
     background-color: #066627;
     transform: translateY(-2px);
 }
