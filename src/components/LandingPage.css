@@ -1,0 +1,167 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  overflow-x: hidden;
+}
+
+/* Landing Page Container */
+.landing-page {
+  width: 100%;
+  opacity: 0;
+  animation: fadeIn 1s ease-out forwards;
+}
+
+/* Landing Section */
+.landing-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 190px;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: slideUp 1s ease-out 0.5s forwards;
+}
+
+/* Text Container */
+.text-container {
+  width: 80%;
+  margin-top: -110px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease-out 0.7s forwards;
+}
+
+/* Heading */
+.text-container h2 {
+  font-size: 3.3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Paragraph */
+.text-container p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #555;
+  padding-right: 300px;
+}
+
+/* Button Group */
+.btn-group {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+  opacity: 0;
+  transform: scale(0.8);
+  animation: fadeInScale 1s ease-out 1s forwards;
+}
+
+/* Advocate Button */
+.advocate-btn {
+  background-color: #ff6200;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Advocate Button Hover */
+.advocate-btn:hover {
+  background-color: #d14d00;
+  transform: scale(1.1);
+  box-shadow: 0px 4px 10px rgba(255, 98, 0, 0.3);
+}
+
+/* Register Button */
+.register-btn {
+  background-color: #006600 ;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Register Button Hover */
+.register-btn:hover {
+  background-color: #008f00 ;
+  transform: scale(1.1);
+  box-shadow: 0px 4px 10px rgba(0, 143, 0, 0.3);
+}
+
+/* Image Container */
+.image-container {
+  width: 50%;
+  opacity: 0;
+  transform: scale(0.9);
+  animation: fadeInScale 1s ease-out 0.8s forwards;
+}
+
+/* Image */
+.image-container img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+/* Image Hover Effect */
+.image-container img:hover {
+  transform: scale(1.05);
+}
+
+/* ================= */
+/* ANIMATIONS */
+/* ================= */
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+/* Slide-up Animation */
+@keyframes slideUp {
+  0% {
+      opacity: 0;
+      transform: translateY(30px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Fade-in with Upward Motion */
+@keyframes fadeInUp {
+  0% {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Fade-in with Scale Effect */
+@keyframes fadeInScale {
+  0% {
+      opacity: 0;
+      transform: scale(0.9);
+  }
+  100% {
+      opacity: 1;
+      transform: scale(1);
+  }
+}

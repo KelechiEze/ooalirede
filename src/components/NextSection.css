@@ -1,0 +1,81 @@
+/* Next Section */
+.next-section {
+    width: 100%;
+    padding: 70px 30px;
+}
+
+/* Top Content Section */
+.top-content {
+    display: flex;
+    align-items: center;
+    padding: 30px 200px;
+}
+
+/* Image Container */
+.image-container {
+    width: 40%; /* Adjusted width to match landing page */
+}
+
+.image-container img {
+    max-width: 66%;
+    border-radius: 10px;
+    margin-left: 140px;
+}
+
+/* Text Container */
+.text-container {
+    width: 55%; /* Adjusted width to align with landing page */
+    margin-top: 0;
+}
+
+.text-container h1 {
+    font-size: 2rem; /* Same as landing page */
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+    padding-right: 180px;
+}
+
+.text-container p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #555;
+    padding-right: 100px; /* Adjusted for consistency */
+}
+
+.video-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    padding: 5px 70px;
+}
+
+/* Default Video Container */
+.video-container {
+    width: 30%; /* Default width for all videos */
+    text-align: center;
+}
+
+/* Default iframe styling */
+.video-container iframe {
+    width: 80%;
+    height: 180px; /* Default height */
+}
+
+/* Second video container (larger size) */
+.video-container:nth-child(2) {
+    width: 40%; /* Increase width */
+}
+
+.video-container:nth-child(2) iframe {
+    width: 98%; /* Full width inside container */
+    height: 270px; /* Increase height */
+}
+
+.video-container p {
+    font-size: 0.9rem;
+    color: #444;
+    margin-top: 10px;
+}
+

@@ -1,0 +1,121 @@
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 50px; 
+  margin-top: 10px;
+  background-color: white;
+  position: relative;
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: slideIn 1s ease-out forwards; 
+}
+
+
+.logo img {
+  height: 50px;
+  opacity: 0;
+  transform: scale(0.8);
+  animation: fadeInScale 1.2s ease-out 0.5s forwards; 
+}
+
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+  opacity: 0;
+  transform: translateY(-10px);
+  animation: fadeIn 1s ease-out 0.8s forwards; /* Delayed fade-in */
+}
+
+/* Individual Nav Link Styling */
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.3s ease;
+  position: relative;
+}
+
+/* Underline animation on hover */
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #ff6200;
+  bottom: -5px;
+  left: 0;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.nav-links a:hover {
+  color: #ff6200;
+  transform: translateY(-2px);
+}
+
+/* Show underline on hover */
+.nav-links a:hover::after {
+  transform: scaleX(1);
+}
+
+/* Donate Button */
+.donate-btn1 {
+  background-color: #007f00;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0;
+  transform: scale(0.8);
+  animation: fadeInScale 1.2s ease-out 1s forwards; /* Delayed fade-in */
+}
+
+/* Button Hover Effect */
+.donate-btn1:hover {
+  background-color: #005a00;
+  transform: scale(1.1); /* Slight scale-up */
+  box-shadow: 0px 4px 10px rgba(0, 127, 0, 0.3); /* Glow effect */
+}
+
+/* Keyframes for Header Slide-in */
+@keyframes slideIn {
+  0% {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Keyframes for Fade-in with Scale Effect */
+@keyframes fadeInScale {
+  0% {
+      opacity: 0;
+      transform: scale(0.8);
+  }
+  100% {
+      opacity: 1;
+      transform: scale(1);
+  }
+}
+
+/* Keyframes for Fade-in */
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+      transform: translateY(-10px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}

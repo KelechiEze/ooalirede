@@ -1,0 +1,60 @@
+.empowerment-container {
+    background-color: #fdf1e6;
+    padding: 60px 100px;
+    text-align: center;
+    border-radius: 15px;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 120px;
+    margin-bottom: 150px;
+  }
+  
+  .empowerment-title {
+    font-size: 27px;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 10px;
+    padding: 1px 260px;
+  }
+  
+  .empowerment-text {
+    font-size: 15.5px;
+    color: #444;
+    margin-bottom: 20px;
+    padding: 1px 170px;
+  }
+  
+  .empowerment-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .advocate-btn {
+    background-color: #ff6a00;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .register-btn {
+    background-color: #046204;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .advocate-btn:hover {
+    background-color: #e65a00;
+  }
+  
+  .register-btn:hover {
+    background-color: #034503;
+  }
+  

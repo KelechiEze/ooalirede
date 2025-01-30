@@ -1,0 +1,152 @@
+/* Main Container */
+.smile-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 15%;
+    background-color: #fff;
+    margin-top: 90px;
+    gap: 40px;
+}
+
+/* Left Text Container */
+.smile-text {
+    width: 50%;
+    margin-top: -80px;
+}
+
+.smile-subtitle {
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.smile-title {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 15px;
+    line-height: 1.4;
+    padding-right: 50px;
+}
+
+/* Green Underline */
+.underline {
+    width: 180px;
+    height: 6px;
+    background-color: #097d32;
+    margin-bottom: 40px;
+}
+
+.smile-description {
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.69;
+    margin-bottom: 20px;
+    padding-right: 80px;
+}
+
+/* Button Container */
+.smile-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+/* Button Styles */
+.btn-advocate,
+.btn-register {
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+.btn-advocate {
+    background-color: #ff6200;
+    color: #fff;
+}
+
+.btn-advocate:hover {
+    background-color: #e64a19;
+    transform: translateY(-2px);
+}
+
+.btn-register {
+    background-color: #097d32;
+    color: #fff;
+}
+
+.btn-register:hover {
+    background-color: #066627;
+    transform: translateY(-2px);
+}
+
+/* Right Image */
+.smile-image {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+}
+
+.smile-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .smile-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 8%;
+    }
+
+    .smile-text {
+        width: 100%;
+        padding: 0;
+    }
+
+    .smile-title {
+        padding-right: 0;
+        font-size: 2rem;
+    }
+
+    .smile-description {
+        padding-right: 0;
+    }
+
+    .smile-buttons {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .smile-image {
+        width: 100%;
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .smile-title {
+        font-size: 1.8rem;
+    }
+
+    .smile-description {
+        font-size: 0.95rem;
+    }
+
+    .btn-advocate,
+    .btn-register {
+        padding: 10px 20px;
+        font-size: 0.95rem;
+    }
+}
