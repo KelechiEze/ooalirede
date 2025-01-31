@@ -1,6 +1,6 @@
 import React from "react";
 import "./LandingPage.css";
-import landingImage from "../assets/right-image.png"; // Replace with actual image file
+import landingImage from "../assets/governorimage.png"; // Replace with actual image file
 
 const LandingPage = () => {
   return (

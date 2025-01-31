@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./Carousel.css";
 import image1 from "../assets/Rectangle 1.png"; // Replace with actual images
 import image2 from "../assets/Rectangle 2.png";
-import image3 from "../assets/Rectangle 3.png";
+import image3 from "../assets/Rectangle 11.png";
 import image4 from "../assets/Rectangle 4.png";
 import image5 from "../assets/Rectangle 10.png";
 import image6 from "../assets/Rectangle 11.png";

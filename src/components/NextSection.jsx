@@ -1,8 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import "./NextSection.css";
-import logoImage from "../assets/out-on-a-limb-logo.png"; // Replace with actual image file
+import logoImage from "../assets/out-on-a-limb-logo.png";
 
 const NextSection = () => {
+  const [modalVideo, setModalVideo] = useState(null);
+
+  const videos = [
+    { id: 1, url: "https://www.youtube.com/embed/geQVIqMqbCE", title: "Out On A Limb 2016" },
+    { id: 2, url: "https://www.youtube.com/embed/KRhVYQvhAVc", title: "Out On A Limb 2017" },
+    { id: 3, url: "https://www.youtube.com/embed/GU_jlSrIrhE", title: "Out On A Limb 2016 Short Clip" },
+  ];
+
   return (
     <div className="next-section">
       {/* Top Section */}
@@ -21,42 +29,39 @@ const NextSection = () => {
 
       {/* YouTube Video Section */}
       <div className="video-section">
-        <div className="video-container">
-          <iframe 
-            width="100%" 
-            height="215" 
-            src="https://www.youtube.com/embed/geQVIqMqbCE" 
-            title="Out On A Limb 2016"
-            frameBorder="0"
-            allowFullScreen
-          ></iframe>
-          <p>Out On A Limb: A brief snippet by The Irede Foundation.</p>
-        </div>
-
-        <div className="video-container">
-          <iframe 
-            width="100%" 
-            height="215" 
-            src="https://www.youtube.com/embed/KRhVYQvhAVc" 
-            title="Out On A Limb 2017"
-            frameBorder="0"
-            allowFullScreen
-          ></iframe>
-          <p>Out On A Limb by The Irede Foundation. Raising awareness and support for limb loss.</p>
-        </div>
-
-        <div className="video-container">
-          <iframe 
-            width="100%" 
-            height="215" 
-            src="https://www.youtube.com/embed/GU_jlSrIrhE" 
-            title="Out On A Limb 2016 Short Clip"
-            frameBorder="0"
-            allowFullScreen
-          ></iframe>
-          <p>Another short clip on Out On A Limb by The Irede Foundation.</p>
-        </div>
+        {videos.map((video) => (
+          <div key={video.id} className="video-container">
+            {/* Overlay div to capture clicks */}
+            <div className="video-overlay" onClick={() => setModalVideo(video.url)}></div>
+            <iframe 
+              width="100%" 
+              height="215" 
+              src={video.url} 
+              title={video.title} 
+              frameBorder="0" 
+              allowFullScreen
+            ></iframe>
+            <p>{video.title}</p>
+          </div>
+        ))}
       </div>
+
+      {/* Video Modal */}
+      {modalVideo && (
+        <div className="modal-overlay" onClick={() => setModalVideo(null)}>
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <span className="close-btn" onClick={() => setModalVideo(null)}>&times;</span>
+            <iframe 
+              width="100%" 
+              height="315" 
+              src={modalVideo} 
+              title="YouTube video" 
+              frameBorder="0" 
+              allowFullScreen
+            ></iframe>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

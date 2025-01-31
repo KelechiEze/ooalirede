@@ -1,6 +1,6 @@
 import React from "react";
 import "./StorySection.css";
-import storyImage from "../assets/storyimage.png"; // Update with the correct image path
+import storyImage from "../assets/beulahimage.png"; // Update with the correct image path
 
 const StorySection = () => {
   return (

@@ -125,6 +125,7 @@
 }
 
 /* Video Section */
+/* Video Section */
 .video-section {
     display: flex;
     justify-content: center;
@@ -135,14 +136,29 @@
 
 /* Default Video Container */
 .video-container {
+    position: relative;
     width: 30%;
     text-align: center;
+}
+
+/* Transparent Overlay to Capture Clicks */
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 10%;
+    width: 80%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    cursor: pointer;
 }
 
 /* Default iframe styling */
 .video-container iframe {
     width: 80%;
     height: 180px;
+    border-radius: 2px;
+    transition: transform 0.3s ease-in-out;
+    pointer-events: none; /* Prevent direct interaction */
 }
 
 /* Second video container (larger size) */
@@ -155,11 +171,60 @@
     height: 270px;
 }
 
+/* Hover effect */
+.video-container iframe:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Video Text */
 .video-container p {
     font-size: 0.9rem;
     color: #444;
     margin-top: 10px;
 }
+
+/* Modal Overlay */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Modal Content */
+.modal-content {
+    background: #444;
+    padding: 10px;
+    border-radius: 4px;
+    position: relative;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Close Button */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Close Button Hover Effect */
+.close-btn:hover {
+    color: red;
+}
+
 
 /* Responsive for 375px Screens */
 @media (max-width: 375px) {
