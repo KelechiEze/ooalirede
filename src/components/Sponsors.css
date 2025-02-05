@@ -40,3 +40,36 @@
     max-height: 100%;
   }
   
+  @media (max-width: 375px) {
+    .sponsors-container {
+        padding: 30px 50px; /* Reduce padding for smaller screens */
+        margin-top: 80px; /* Adjust spacing */
+        text-align: left; /* Align text to the left */
+    }
+
+    .sponsors-title {
+        font-size: 15px; /* Slightly smaller title */
+    }
+
+    .sponsors-heading {
+        font-size: 23px; /* Reduce font size for better fit */
+        margin-bottom: 20px; /* Adjust spacing */
+    }
+
+    .logos-grid {
+        flex-direction: column; /* Stack logos vertically */
+        align-items: center; /* Center them */
+        gap: 15px; /* Reduce gap */
+        margin-right: 590px;
+    }
+
+    .logo-box {
+        width: 120px; /* Reduce width */
+        height: 50px; /* Reduce height */
+    }
+
+    .sponsor-logo {
+        max-width: 90%; /* Slightly reduce size */
+        max-height: 90%;
+    }
+}

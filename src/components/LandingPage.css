@@ -24,28 +24,28 @@ body {
 }
 
 /* Text Container */
-.text-container {
+.text-containerz {
   width: 80%;
-  margin-top: -110px;
+  margin-top: -10px;
   opacity: 0;
   transform: translateY(20px);
   animation: fadeInUp 1s ease-out 0.7s forwards;
 }
 
 /* Heading */
-.text-container h2 {
-  font-size: 3.3rem;
+.text-containerz .amigos {
+  font-size: 3.2rem;
   font-weight: bold;
   margin-bottom: 20px;
   color: #333;
 }
 
 /* Paragraph */
-.text-container p {
+.text-containerz .friends {
   font-size: 1rem;
-  line-height: 1.6;
+  line-height: 1.5;
   color: #555;
-  padding-right: 300px;
+  padding-right: 150px;
 }
 
 /* Button Group */
@@ -59,7 +59,7 @@ body {
 }
 
 /* Advocate Button */
-.advocate-btn {
+.advocate-btn1 {
   background-color: #ff6200;
   color: white;
   padding: 12px 20px;
@@ -71,14 +71,14 @@ body {
 }
 
 /* Advocate Button Hover */
-.advocate-btn:hover {
+.advocate-btn1:hover {
   background-color: #d14d00;
   transform: scale(1.1);
   box-shadow: 0px 4px 10px rgba(255, 98, 0, 0.3);
 }
 
 /* Register Button */
-.register-btn {
+.register-btn1 {
   background-color: #006600 ;
   color: white;
   padding: 12px 20px;
@@ -90,14 +90,14 @@ body {
 }
 
 /* Register Button Hover */
-.register-btn:hover {
+.register-btn1:hover {
   background-color: #008f00 ;
   transform: scale(1.1);
   box-shadow: 0px 4px 10px rgba(0, 143, 0, 0.3);
 }
 
 /* Image Container */
-.image-container {
+.smile-image1 {
   width: 50%;
   opacity: 0;
   transform: scale(0.9);
@@ -105,14 +105,14 @@ body {
 }
 
 /* Image */
-.image-container img {
+.smile-image1 img {
   width: 100%;
   border-radius: 10px;
   transition: transform 0.3s ease;
 }
 
 /* Image Hover Effect */
-.image-container img:hover {
+.smile-image1 img:hover {
   transform: scale(1.05);
 }
 
@@ -170,24 +170,27 @@ body {
   .landing-section {
     flex-direction: column;
     padding: 15px;
-    text-align: center;
+    text-align: left;
   }
 
-  .text-container {
-    width: 100%;
+  .text-containerz {
+    width: 60%;
     margin-top: 0;
-    padding: 0 10px;
+    padding: 0 100px;
   }
 
-  .text-container h2 {
+  .text-containerz .amigos {
     font-size: 2.5rem;
     margin-bottom: 10px;
+    text-align: left;
+    margin-left: 160px;
   }
 
-  .text-container p {
-    font-size: 0.9rem;
-    padding: 0;
+  .text-containerz .friends {
+    font-size: 0.8rem;
+    padding: 0 160px;
     line-height: 1.5;
+    text-align: left;
   }
 
   .btn-group {
@@ -196,20 +199,21 @@ body {
     gap: 10px;
   }
 
-  .advocate-btn,
-  .register-btn {
+  .advocate-btn1,
+  .register-btn1 {
     width: 25%;
     font-size: 0.9rem;
     padding: 10px;
   }
 
-  .image-container {
+  .smile-image1 {
     width: 100%;
     margin-top: 20px;
   }
 
-  .image-container img {
+  .smile-image1 img {
     max-width: 100%;
+    width: 60%;
     margin: 0 auto;
   }
 }
@@ -219,20 +223,23 @@ body {
     flex-direction: column;
     padding: 20px;
     text-align: center;
+    margin-left: -150px
   }
 
-  .text-container {
+  .text-containerz {
     width: 90%;
     margin-top: 0;
     padding: 0 15px;
+    text-align: left;
   }
 
-  .text-container h2 {
+  .text-containerz h2 {
     font-size: 2.2rem; /* Reduced for better fit */
     margin-bottom: 10px;
+    margin-left: 190px;
   }
 
-  .text-container p {
+  .text-containerz p {
     font-size: 0.95rem;
     padding: 0;
     line-height: 1.6;
@@ -245,22 +252,26 @@ body {
     width: 100%;
   }
 
-  .advocate-btn,
-  .register-btn {
-    width: 80%; /* Increased for easier mobile clicking */
+  .advocate-btn1,
+  .register-btn1 {
+    width: 28%; /* Increased for easier mobile clicking */
     font-size: 1rem;
     padding: 12px;
+    margin-top: 6px;
+    margin-left: -262px;
   }
 
-  .image-container {
+  .smile-image1 {
     width: 100%;
     margin-top: 20px;
     display: flex;
     justify-content: center;
+    margin-right: 215px;
   }
 
-  .image-container img {
-    max-width: 95%;
-    border-radius: 8px;
+  .smile-image1 img {
+    width: 300px;  /* Increase image size */
+    max-width: 100%; /* Ensure it scales properly */
   }
-}
+  }
+

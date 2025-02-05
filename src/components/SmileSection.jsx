@@ -8,9 +8,9 @@ const SmileSection = () => {
       {/* Left Text Content */}
       <div className="smile-text">
         <h3 className="smile-subtitle">ABOUT OOAL</h3>
-        <h1 className="smile-title">Out on a Limb: <br /> Empowering Lives Together</h1>
+        <h1 className="smile-titlez">Out on a Limb: <br /> Empowering Lives Together</h1>
         <div className="underline"></div>
-        <p className="smile-description">
+        <p className="smile-descriptionz">
           In 2013, we launched the global Out-On-A-Limb campaign to raise awareness 
           about the trauma of being a child amputee or caregiver. This annual 2-KM 
           walk advocates for the rights of child amputees to equal treatments as 
@@ -26,7 +26,7 @@ const SmileSection = () => {
       </div>
 
       {/* Right Image */}
-      <div className="smile-image">
+      <div className="smile-image3">
         <img src={smileImage} alt="Out on a Limb Empowering Lives" />
       </div>
     </div>

@@ -5,11 +5,11 @@ import image2 from "../assets/Rectangle 2.png";
 import image3 from "../assets/Rectangle 11.png";
 import image4 from "../assets/Rectangle 4.png";
 import image5 from "../assets/Rectangle 10.png";
-import image6 from "../assets/Rectangle 11.png";
-import image7 from "../assets/Rectangle 4.png";
-import image8 from "../assets/Rectangle 2.png";
-import image9 from "../assets/Rectangle 11.png";
-import image10 from "../assets/Rectangle 11.png";
+import image6 from "../assets/Rectangle 12.png";
+import image7 from "../assets/Rectangle 13.png";
+import image8 from "../assets/Rectangle 14.png";
+import image9 from "../assets/Rectangle 15.png";
+import image10 from "../assets/Rectangle 16.png";
 
 const images = [image1, image2, image3, image4, image5, image6, image7, image8, image9, image10];
 

@@ -249,23 +249,29 @@
     .image-container img {
         max-width: 60%;
         width: 40%;
-        margin: 0 auto; /* Center the image */
+        margin: 0 auto;
+        margin-left: -30px
     }
 
     .text-container {
-        width: 100%;
+        width: 80%;
         padding: 0;
+        margin-left: -170px;
+        margin-top: -60px;
+        text-align: left;
     }
 
     .text-container h1 {
-        font-size: 1.8rem; /* Reduce font size */
-        padding: 1px 10px;
+        font-size: 1.2rem; /* Reduce font size */
+        padding: 1px 280px;
         margin-bottom: 10px;
+        margin-left: -250px;
     }
 
     .text-container p {
-        font-size: 1rem;
-        padding: 3px 190px;
+        font-size: 0.8rem;
+        padding: 3px 300px;
+        margin-left: -270px;
     }
 
     .video-section {
@@ -277,10 +283,11 @@
     .video-container {
         width: 50%; /* Full width */
         margin-bottom: 20px;
+        margin-left: -470px;
     }
 
     .video-container iframe {
-        width: 100%;
+        width: 70%;
         height: 200px; /* Adjust height */
     }
 
@@ -289,7 +296,34 @@
     }
 
     .video-container:nth-child(2) iframe {
-        width: 100%;
+        width: 70%;
         height: 220px;
+    }
+
+    .modal-content {
+        width: 90%; /* Use more screen width */
+        max-width: 320px; /* Increased size */
+        padding: 15px;
+        font-size: 1rem;
+        margin-left: -400px;
+    }
+
+    /* Adjust Close Button */
+    .close-btn {
+        font-size: 24px;
+        top: 8px;
+        right: 12px;
+    }
+
+    /* Modal Text Adjustments */
+    .modal-content h1 {
+        font-size: 1.2rem; /* Increase heading size */
+        margin-bottom: 10px;
+    }
+
+    .modal-content p {
+        font-size: 0.9rem;
+        text-align: center;
+        line-height: 1.5;
     }
 }

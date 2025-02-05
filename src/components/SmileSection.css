@@ -20,13 +20,12 @@
     margin-bottom: 10px;
 }
 
-.smile-title {
+.smile-titlez {
     font-size: 2rem;
     font-weight: bold;
     color: #222;
     margin-bottom: 10px;
     line-height: 1.5;
-    padding-right: 200px;
 }
 
 /* Green Underline */
@@ -37,12 +36,12 @@
     margin-bottom: 20px;
 }
 
-.smile-description {
+.smile-descriptionz {
     font-size: 1rem;
     color: #444;
     line-height: 1.9;
     margin-bottom: 20px;
-    padding-right: 170px;
+    padding-right: 70px;
 }
 
 /* Button Container */
@@ -88,22 +87,26 @@
     transform: translateY(-2px);
 }
 
-/* Right Image */
-.smile-image {
-    width: 45%;
-}
-
-.smile-image img {
+.smile-image3 {
+    width: 50%;
+    opacity: 0;
+    transform: scale(0.9);
+    animation: fadeInScale 1s ease-out 0.8s forwards;
+  }
+  
+  /* Image */
+  .smile-image3 img {
     width: 100%;
-    height: auto;
-    border-radius: 12px;
-}
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
 
 /* Responsive Design */
 @media (max-width: 768px) {
     .smile-section {
         flex-direction: column;
-        text-align: center;
+        text-align: left;
         padding: 30px 5%;
     }
 
@@ -115,7 +118,7 @@
         justify-content: center;
     }
 
-    .smile-image {
+    .smile-image2 {
         width: 100%;
         margin-top: 20px;
     }
@@ -126,15 +129,16 @@
     /* Main Container */
     .smile-section {
         flex-direction: column;
-        text-align: center;
+        text-align: left;
         padding: 30px 10%;
         margin-top: 70px;
     }
 
     /* Left Text Container */
     .smile-text {
-        width: 90%;
+        width: 80%;
         padding-right: 0;
+        text-align: left;
     }
 
     .smile-subtitle {
@@ -145,12 +149,13 @@
         margin-bottom: 10px;
     }
 
-    .smile-title {
-        font-size: 1.6rem;
+    .smile-titlez {
+        font-size: 1.4rem;
         font-weight: bold;
         color: #222;
         margin-bottom: 10px;
         line-height: 1.5;
+        margin-right: 135px;
     }
 
     /* Green Underline */
@@ -159,17 +164,15 @@
         height: 8px;
         background-color: #097d32;
         margin-bottom: 20px;
-        margin-left: 320px;
     }
 
-    .smile-description {
-        font-size: 1rem;
+    .smile-descriptionz {
+        font-size: 0.8rem;
         color: #444;
         line-height: 1.9;
         margin-bottom: 20px;
-        margin-right: 20px;
-        padding: 0 70px;
-
+        padding-right: 200px;
+        text-align: left;
     }
 
     /* Button Container */
@@ -177,7 +180,6 @@
         display: flex;
         flex-direction: column; /* Stack buttons vertically */
         gap: 15px;
-        justify-content: center;
         margin-top: 15px;
         width: 100%;
     }
@@ -187,7 +189,7 @@
         background-color: #ff6200;
         color: white;
         border: none;
-        padding: 12px 20px;
+        padding: 10px 10px;
         font-size: 1rem;
         font-weight: 400;
         border-radius: 5px;
@@ -195,7 +197,6 @@
         transition: background 0.3s ease, transform 0.2s ease;
         width: 30%; /* Make buttons full width when stacked */
         min-width: 120px;
-        margin-left: 300px;
     }
 
     .btn-advocate1:hover {
@@ -208,14 +209,13 @@
         background-color: #097d32;
         color: white;
         border: none;
-        padding: 12px 20px;
+        padding: 10px 10px;
         font-size: 1rem;
         font-weight: 400;
         border-radius: 5px;
         cursor: pointer;
         transition: background 0.3s ease, transform 0.2s ease;
         width: 30%; /* Make buttons full width when stacked */
-        margin-left: 300px;
         min-width: 120px;
     }
 
@@ -225,15 +225,15 @@
     }
 
     /* Right Image */
-    /* Right Image */
-    .smile-image {
+    .smile-image3 {
         width: 60%; /* Reduce the width of the image */
         margin-top: 20px;
     }
 
-    .smile-image img {
-        width: 80%; /* Ensure the image scales with the container */
+    .smile-image3 img {
+        width: 70%; /* Ensure the image scales with the container */
         height: auto;
         border-radius: 12px;
+        margin-left: -150px;
     }
 }

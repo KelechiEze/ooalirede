@@ -7,7 +7,7 @@ const StorySection = () => {
     <div className="smile-section">
     
        {/* Right Image */}
-       <div className="smile-image">
+       <div className="smile-image4">
         <img src={storyImage} alt="Out on a Limb Empowering Lives" />
       </div>
 

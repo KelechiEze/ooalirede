@@ -58,3 +58,36 @@
     background-color: #034503;
   }
   
+  @media (max-width: 375px) {
+    .empowerment-container {
+      padding: 30px 44px;  /* Reduce padding for smaller screens */
+      margin-top: 60px;
+      margin-bottom: 80px;
+      max-width: 100%;  /* Make it responsive */
+      text-align: left;  /* Align all text to the left */
+    }
+  
+    .empowerment-title {
+      font-size: 22px;  /* Reduce title size */
+      padding: 0;  /* Remove extra padding */
+    }
+  
+    .empowerment-text {
+      font-size: 14px;  /* Reduce text size */
+      padding-right: 260px;
+      margin-left: -170px;  /* Remove extra padding */
+    }
+  
+    .empowerment-buttons {
+      flex-direction: column; /* Stack buttons vertically */
+      gap: 10px;
+      align-items: flex-start; /* Align buttons to the left */
+    }
+  
+    .advocate-btn, .register-btn {
+      width: auto; /* Adjust width to fit content */
+      font-size: 13px; /* Reduce font size slightly */
+      padding: 12px;
+    }
+  }
+  

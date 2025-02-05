@@ -89,13 +89,13 @@
 }
 
 /* Right Image */
-.smile-image {
+.smile-image4 {
     width: 45%;
     display: flex;
     justify-content: center;
 }
 
-.smile-image img {
+.smile-image4 img {
     width: 100%;
     height: auto;
     border-radius: 12px;
@@ -129,7 +129,7 @@
         flex-wrap: wrap;
     }
 
-    .smile-image {
+    .smile-image4 {
         width: 100%;
         margin-top: 30px;
     }
@@ -148,5 +148,64 @@
     .btn-register {
         padding: 10px 20px;
         font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .smile-section {
+        flex-direction: column;
+        text-align: left; /* Align content to the left */
+        padding: 40px 5%;
+        gap: 20px;
+    }
+
+    .smile-text {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .smile-subtitle {
+        font-size: 0.85rem; /* Slightly smaller subtitle */
+    }
+
+    .smile-title {
+        font-size: 1.6rem; /* Reduce title size */
+        padding-right: 0;
+    }
+
+    .underline {
+        width: 140px; /* Smaller underline */
+        height: 5px;
+        margin-bottom: 25px;
+    }
+
+    .smile-description {
+        font-size: 0.8rem; /* Adjust description size */
+        line-height: 1.5;
+        padding-right: 0;
+    }
+
+    .smile-buttons {
+        flex-direction: column; /* Stack buttons */
+        gap: 10px;
+    }
+
+    .btn-advocate2,
+    .btn-register2 {
+        width: 30%; /* Make buttons full width */
+        padding: 10px 15px;
+        font-size: 0.9rem;
+    }
+
+    .smile-image4 {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .smile-image4 img {
+        width: 100%;
+        max-height: 250px; /* Reduce image size */
+        object-fit: contain;
+        margin-left: -490px;
     }
 }
